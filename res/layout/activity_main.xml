@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lay_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            android:id="@+id/lay_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ff0000" >
+
+            <ImageView
+                android:id="@+id/img01"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_desc" />
+
+            <View
+                android:layout_width="@dimen/dimen_pixels_one"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white" />
+
+            <ImageView
+                android:id="@+id/img02"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_desc" />
+
+            <View
+                android:layout_width="@dimen/dimen_pixels_one"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white" />
+
+            <ImageView
+                android:id="@+id/img03"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/img_desc" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_indicator"
+            android:layout_width="105dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_pixels_one"
+            android:background="@color/color_white" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lay_title" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
