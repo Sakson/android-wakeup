@@ -3,5 +3,8 @@
     <string name="app_name">WakeUp</string>
     <string name="img_desc">ImageView</string>
     <string name="menu_settings">Settings</string>
+    <string name="msg_progress_download_app">正在下载更新, 请稍候..</string>
+    
+    <string name="status_no_selected_city">没有选择城市</string>
 
 </resources>
